@@ -5791,13 +5791,13 @@
             for (let col = 0; col < 5; col++) {
                 let cell = "cell-" + row + "-" + (col + 1);
                 if (secret[col] == input[col]) {
-                    console.log("#" + cell);
+                    // console.log("#" + cell);
                     document.getElementById(cell).innerHTML = input[col].toUpperCase();
                     $("#" + cell).addClass("cell-green");
                     $("#cell-" + input[col]).addClass("cell-green");
                 }
                 else if (!(secret.includes(input[col]))) {
-                    console.log(cell);
+                    // console.log(cell);
                     document.getElementById(cell).innerHTML = input[col].toUpperCase();
                     $("#" + cell).addClass("cell-disabled");
                     $("#cell-" + input[col]).addClass("cell-disabled");
@@ -5805,7 +5805,7 @@
                 else {
                     for (let m = 0; m < 5; m++) {
                         if (col != m && secret[m] == input[col]) {
-                            console.log(cell);
+                            // console.log(cell);
                             document.getElementById(cell).innerHTML = input[col].toUpperCase();
                             $("#" + cell).addClass("cell-yellow");
                             if (!($("#cell-" + input[col]).hasClass("cell-green"))) {
@@ -5851,13 +5851,13 @@
                 for (let col = 0; col < 5; col++) {
                     let cell = "cell-" + row + "-" + (col + 1);
                     if (secret[col] == input[col]) {
-                        console.log("#" + cell);
+                        // console.log("#" + cell);
                         document.getElementById(cell).innerHTML = input[col].toUpperCase();
                         $("#" + cell).addClass("cell-green");
                         $("#cell-" + input[col]).addClass("cell-green");
                     }
                     else if (!(secret.includes(input[col]))) {
-                        console.log(cell);
+                        // console.log(cell);
                         document.getElementById(cell).innerHTML = input[col].toUpperCase();
                         $("#" + cell).addClass("cell-disabled");
                         $("#cell-" + input[col]).addClass("cell-disabled");
@@ -5865,7 +5865,7 @@
                     else {
                         for (let m = 0; m < 5; m++) {
                             if (col != m && secret[m] == input[col]) {
-                                console.log(cell);
+                                // console.log(cell);
                                 document.getElementById(cell).innerHTML = input[col].toUpperCase();
                                 $("#" + cell).addClass("cell-yellow");
                                 if (!($("#cell-" + input[col]).hasClass("cell-green"))) {
